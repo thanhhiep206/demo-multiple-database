@@ -10,10 +10,3 @@ default: &default
 development:
   <<: *default
   database: demo_multiple_database
-
-production:
-  autodoor:
-    <<: *default
-    database: autodoor_production
-    username: admin
-    password: <%= ENV['DATABASE_PASSWORD'] %>
